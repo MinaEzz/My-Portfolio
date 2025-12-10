@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HOME_BG from "@/assets/home-background-image.webp";
+import TextContent from "./text-content/TextContent.component";
 
 export default function Home() {
   return (
@@ -11,9 +12,10 @@ export default function Home() {
         role="presentation"
         draggable={false}
         priority
-        className="absolute -z-10 object-cover object-center"
+        className="absolute -z-10 object-cover object-center opacity-80"
       />
       <div className="black-layer" aria-hidden="true" />
+      <TextContent />
     </section>
   );
 }
