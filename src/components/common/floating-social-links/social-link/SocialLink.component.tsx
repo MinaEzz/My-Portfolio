@@ -8,7 +8,7 @@ export default function SocialLink({ name, href, icon }: ISocialLinkProps) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={name}
-      className="w-12 h-12 bg-white/10 flex items-center justify-center text-white rounded-full shadow-lg hover:-translate-x-2 transition-transform duration-300"
+      className="w-12 h-12 bg-black/50 flex items-center justify-center text-white rounded-full shadow-lg hover:-translate-x-2 transition-transform duration-300"
     >
       {React.cloneElement(icon, { className: "w-6 h-6", title: name })}
     </a>

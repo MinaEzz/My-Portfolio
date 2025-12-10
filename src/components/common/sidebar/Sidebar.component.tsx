@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="w-full lg:col-span-2 max-lg:hidden bg-background py-8 px-4 overflow-auto">
+    <aside className="w-full min-h-screen lg:col-span-2 max-lg:hidden bg-background py-8 px-4 overflow-auto sticky left-0">
       <div className="w-full h-full flex flex-col justify-between items-center">
         {/* sidebar header */}
         <Link
