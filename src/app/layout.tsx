@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import "../scss/style.scss";
+import GridContainer from "@/components/common/grid-container/GridContainer.component";
+import Sidebar from "@/components/common/sidebar/Sidebar.component";
+import FloatingSocialLinks from "@/components/common/floating-social-links/FloatingSocialLinks.component";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +31,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ibmPlexSans.className} ${spaceGrotesk.variable} bg-background antialiased`}
       >
-        {children}
+        <GridContainer cols={12}>
+          <Sidebar />
+          <main className="w-full h-full lg:col-span-10 col-span-full">
+            {children}
+          </main>
+          <FloatingSocialLinks />
+        </GridContainer>
       </body>
     </html>
   );
