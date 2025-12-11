@@ -5,6 +5,7 @@ import "../scss/style.scss";
 import GridContainer from "@/components/common/grid-container/GridContainer.component";
 import Sidebar from "@/components/common/sidebar/Sidebar.component";
 import FloatingSocialLinks from "@/components/common/floating-social-links/FloatingSocialLinks.component";
+import Bottombar from "@/components/common/bottombar/Bottombar.component";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
           </main>
           <FloatingSocialLinks />
         </GridContainer>
+        <Bottombar />
       </body>
     </html>
   );
