@@ -4,7 +4,7 @@ import ISkillItemProps from "./SkillItem.types";
 export default function SkillItem({ name, icon, ariaLabel }: ISkillItemProps) {
   return (
     <div
-      className="w-32 h-32 flex items-center justify-center"
+      className="w-24 h-24 flex items-center justify-center"
       aria-label={ariaLabel}
       role="img"
     >
