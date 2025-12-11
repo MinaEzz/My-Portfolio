@@ -4,7 +4,7 @@ import { cva } from "class-variance-authority";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import INavLinkProps from "./Navlink.types";
+import INavLinkProps from "./NavLink.types";
 
 const linkStyles = cva(
   "flex items-center gap-2 px-4 py-2 b2 capitalize relative",
