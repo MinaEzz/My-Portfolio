@@ -27,14 +27,12 @@ const settings = {
       breakpoint: 1024, // Tablet (md in Tailwind: ≥768px, but Slick uses px; adjust if needed)
       settings: {
         slidesToShow: 4, // 4 slides on tablet
-        centerPadding: "5px", // Adjust padding for tablet
       },
     },
     {
       breakpoint: 640, // Mobile (sm in Tailwind: ≥640px)
       settings: {
         slidesToShow: 2, // 2 slides on mobile
-        centerPadding: "5px", // Adjust padding for tablet
       },
     },
   ],
