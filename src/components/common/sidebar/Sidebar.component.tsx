@@ -1,6 +1,6 @@
 import { NAVIGATION_LINKS } from "@/data";
-import Navlink from "./Navlink/Navlink.component";
 import Link from "next/link";
+import NavLink from "./nav-link/NavLink.component";
 
 export default function Sidebar() {
   return (
@@ -15,15 +15,17 @@ export default function Sidebar() {
         </Link>
 
         {/* sidebar body */}
-        <ul className="w-full h-full flex-1 space-y-8 my-16">
-          {NAVIGATION_LINKS.map((link, index) => {
-            return (
-              <li key={index}>
-                <Navlink {...link} />
-              </li>
-            );
-          })}
-        </ul>
+        <nav className="w-full h-full flex-1 my-16">
+          <ul className="w-full h-full space-y-8">
+            {NAVIGATION_LINKS.map((link, index) => {
+              return (
+                <li key={index}>
+                  <NavLink {...link} />
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
 
         {/* sidebar footer */}
         <footer className="w-full h-fit flex flex-col items-center gap-2 c1 text-white/60 text-center">
