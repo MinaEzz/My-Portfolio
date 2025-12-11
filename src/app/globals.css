@@ -87,7 +87,7 @@
   }
 }
 
-.slick-dots li button:before {
+/* .slick-dots li button:before {
   color: var(--primary-500) !important;
   opacity: 0.5;
 }
@@ -99,4 +99,4 @@
 
 .slick-slide {
   padding: 0 16px !important;
-}
+} */
