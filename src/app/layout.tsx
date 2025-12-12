@@ -3,9 +3,9 @@ import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import "../scss/style.scss";
 import GridContainer from "@/components/common/grid-container/GridContainer.component";
-import Sidebar from "@/components/common/sidebar/Sidebar.component";
+import Sidebar from "@/components/common/desktop/sidebar/Sidebar.component";
+import Bottombar from "@/components/common/mobile/bottombar/Bottombar.component";
 import FloatingSocialLinks from "@/components/common/floating-social-links/FloatingSocialLinks.component";
-import Bottombar from "@/components/common/bottombar/Bottombar.component";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",

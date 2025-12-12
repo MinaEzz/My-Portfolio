@@ -49,7 +49,7 @@ export const NAVIGATION_LINKS = [
   },
 ];
 
-export const FLOAT_SOCIAL_MEDIA_LINKS = [
+export const SOCIAL_MEDIA_LINKS = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/MinaSuleiman19",
