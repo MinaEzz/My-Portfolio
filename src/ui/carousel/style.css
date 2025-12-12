@@ -1,0 +1,42 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  animation: spin 10s linear infinite;
+  -webkit-animation: spin 10s linear infinite;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.slide {
+  flex: 0 0 auto;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+  to {
+    translate: -50%;
+  }
+}
