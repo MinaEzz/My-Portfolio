@@ -1,16 +1,14 @@
-import { FLOAT_SOCIAL_MEDIA_LINKS } from "@/data";
-import SocialLink from "./social-link/SocialLink.component";
+"use client";
+import useScreenSize from "@/hooks/useScreenSize.hook";
+import DesktopSocialLinks from "../desktop/desktop-social-links/DesktopSocialLinks.component";
+import MobileSocialLinks from "../mobile/mobile-social-links/MobileSocialLinks.component";
 
 export default function FloatingSocialLinks() {
+  const screenWidth = useScreenSize();
   return (
-    <ul className="hidden lg:flex fixed right-0 top-1/2 transform -translate-y-1/2 flex-col gap-4 z-50 pr-2">
-      {FLOAT_SOCIAL_MEDIA_LINKS.map((link, index) => {
-        return (
-          <li key={index}>
-            <SocialLink {...link} />
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      {screenWidth > 1024 && <DesktopSocialLinks />}
+      {screenWidth < 1024 && <MobileSocialLinks />}
+    </>
   );
 }
