@@ -9,23 +9,23 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa6";
-import HTML_LOGO from "../assets/icons/HTML.png";
-import CSS_LOGO from "../assets/icons/CSS.png";
-import JS_LOGO from "../assets/icons/JS.png";
-import BOOTSTRAP_LOGO from "../assets/icons/BOOTSTRAP.png";
-import JQUERY_LOGO from "../assets/icons/JQUERY.png";
-import REACT_LOGO from "../assets/icons/REACT.png";
-import TAILWIND_LOGO from "../assets/icons/TAILWIND.png";
-import TS_LOGO from "../assets/icons/TS.png";
-import NODE_LOGO from "../assets/icons/NODE.png";
-import EXPRESS_LOGO from "../assets/icons/EXPRESS.png";
-import MONGODB_LOGO from "../assets/icons/MONGODB.png";
-import NEXT_LOGO from "../assets/icons/NEXT.png";
-import REDUX_LOGO from "../assets/icons/REDUX.png";
-import GIT_LOGO from "../assets/icons/GIT.png";
-import GITHUB_LOGO from "../assets/icons/GITHUB.png";
-import NPM_LOGO from "../assets/icons/NPM.png";
-import POSTMAN_LOGO from "../assets/icons/POSTMAN.png";
+import HTML_LOGO from "../assets/icons/HTML.svg";
+import CSS_LOGO from "../assets/icons/CSS.svg";
+import JS_LOGO from "../assets/icons/JS.svg";
+import BOOTSTRAP_LOGO from "../assets/icons/BOOTSTRAP.svg";
+import JQUERY_LOGO from "../assets/icons/JQUERY.svg";
+import REACT_LOGO from "../assets/icons/REACT.svg";
+import TAILWIND_LOGO from "../assets/icons/TAILWIND.svg";
+import TS_LOGO from "../assets/icons/TS.svg";
+import NODE_LOGO from "../assets/icons/NODE.svg";
+// import EXPRESS_LOGO from "../assets/icons/EXPRESS.svg";
+import MONGODB_LOGO from "../assets/icons/MONGODB.svg";
+import NEXT_LOGO from "../assets/icons/NEXT.svg";
+import REDUX_LOGO from "../assets/icons/REDUX.svg";
+import GIT_LOGO from "../assets/icons/GIT.svg";
+import GITHUB_LOGO from "../assets/icons/GITHUB.svg";
+import NPM_LOGO from "../assets/icons/NPM.svg";
+import POSTMAN_LOGO from "../assets/icons/POSTMAN.svg";
 
 export const NAVIGATION_LINKS = [
   {
@@ -100,7 +100,7 @@ export const SKILLS = [
   { name: "Tailwind CSS", icon: TAILWIND_LOGO, ariaLabel: "Tailwind CSS logo" },
   { name: "Redux", icon: REDUX_LOGO, ariaLabel: "Redux logo" },
   { name: "Node JS", icon: NODE_LOGO, ariaLabel: "NodeJS logo" },
-  { name: "Express JS", icon: EXPRESS_LOGO, ariaLabel: "ExpressJS logo" },
+  // { name: "Express JS", icon: EXPRESS_LOGO, ariaLabel: "ExpressJS logo" },
   { name: "MongoDB", icon: MONGODB_LOGO, ariaLabel: "MongoDB logo" },
   { name: "Postman", icon: POSTMAN_LOGO, ariaLabel: "Postman logo" },
   { name: "TypeScript", icon: TS_LOGO, ariaLabel: "TypeScript logo" },
