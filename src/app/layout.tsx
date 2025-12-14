@@ -6,6 +6,8 @@ import GridContainer from "@/components/common/grid-container/GridContainer.comp
 import Sidebar from "@/components/common/desktop/sidebar/Sidebar.component";
 import Bottombar from "@/components/common/mobile/bottombar/Bottombar.component";
 import FloatingSocialLinks from "@/components/common/floating-social-links/FloatingSocialLinks.component";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -42,6 +44,8 @@ export default function RootLayout({
           <FloatingSocialLinks />
         </GridContainer>
         <Bottombar />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

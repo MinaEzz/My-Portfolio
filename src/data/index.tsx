@@ -1,4 +1,5 @@
-import { FaHome, FaUserAlt, FaFolderOpen } from "react-icons/fa";
+import { FaHome, FaUserAlt, FaFolderOpen, FaPhoneAlt } from "react-icons/fa";
+import { BsEnvelopeAtFill } from "react-icons/bs";
 import { FaMessage } from "react-icons/fa6";
 import {
   FaFacebook,
@@ -107,4 +108,19 @@ export const SKILLS = [
   { name: "NPM", icon: NPM_LOGO, ariaLabel: "NPM logo" },
   { name: "Git", icon: GIT_LOGO, ariaLabel: "Git logo" },
   { name: "GitHub", icon: GITHUB_LOGO, ariaLabel: "GitHub logo" },
+];
+
+export const CONTACT_INFO = [
+  {
+    icon: <BsEnvelopeAtFill />,
+    title: "Reach Me By Email",
+    value: "minaezzat98@gmail.com",
+    href: "mailto:minaezzat98@gmail.com",
+  },
+  {
+    icon: <FaPhoneAlt />,
+    title: "Call Me Anytime",
+    value: "+201016056294",
+    href: "tel:+201016056294",
+  },
 ];
