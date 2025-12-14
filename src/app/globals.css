@@ -27,6 +27,11 @@
   padding-top: 4.375rem;
   padding-bottom: 4.375rem;
 }
+@media (max-width: 1024px) {
+  .pd-y-s {
+    padding-bottom: 8.75rem;
+  }
+}
 .mg-t {
   margin-top: 80px !important;
 }
