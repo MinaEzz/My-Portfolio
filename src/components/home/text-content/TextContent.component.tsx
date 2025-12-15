@@ -10,16 +10,16 @@ export default function TextContent() {
       </p>
 
       <div className="w-fit mt-4 flex items-center gap-4 max-md:flex-col">
-        <Button variant="default" size="lg" className="w-[12.75rem]">
-          Download CV
-        </Button>
         <Button
-          variant="outlined"
+          variant="default"
           size="lg"
-          //   href="/Hazem Ahmed CV.pdf"
-          //   download={true}
+          href="/Dev. Mina Ezzat Barsom.pdf"
+          download={true}
           className="w-[12.75rem]"
         >
+          Download CV
+        </Button>
+        <Button variant="outlined" size="lg" className="w-[12.75rem]">
           Hire Me
         </Button>
       </div>

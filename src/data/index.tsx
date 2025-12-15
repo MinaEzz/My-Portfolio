@@ -124,3 +124,13 @@ export const CONTACT_INFO = [
     href: "tel:+201016056294",
   },
 ];
+
+const PROJECTS = [
+  {
+    image: "",
+    title: "",
+    technologies: [""],
+    githubLink: "",
+    liveDemoLink: "",
+  },
+];
