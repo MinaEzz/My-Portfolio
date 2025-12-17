@@ -125,12 +125,47 @@ export const CONTACT_INFO = [
   },
 ];
 
-const PROJECTS = [
+export const PROJECTS = [
   {
-    image: "",
-    title: "",
-    technologies: [""],
-    githubLink: "",
-    liveDemoLink: "",
+    image: "https://i.postimg.cc/gJ197WZH/Youtube-Clone-Thumbnail.png",
+    title: "Youtube Clone",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "CRA",
+      "REACT.JS",
+      "MATERIAL UI",
+    ],
+    githubLink: "https://github.com/MinaEzz/YouTube-clone-react-js",
+    liveDemoLink: "https://youtube-clone-minaezzat.onrender.com/",
+    projectType: "frontend",
+  },
+  {
+    image:
+      "https://i.postimg.cc/P5ytqhG3/Travel_Solution_B2B_App_Mobile_Booking_System.png",
+    title: "Nike Landing Page",
+    technologies: ["HTML", "CSS", "TAILWINDCSS", "REACT.JS", "VITE"],
+    githubLink: "test",
+    liveDemoLink: "test",
+    projectType: "fullstack",
+  },
+  {
+    image:
+      "https://i.postimg.cc/P5ytqhG3/Travel_Solution_B2B_App_Mobile_Booking_System.png",
+    title: "Nike Landing Page",
+    technologies: ["HTML", "CSS", "TAILWINDCSS", "REACT.JS", "VITE"],
+    githubLink: "test",
+    liveDemoLink: "test",
+    projectType: "frontend",
+  },
+  {
+    image:
+      "https://i.postimg.cc/P5ytqhG3/Travel_Solution_B2B_App_Mobile_Booking_System.png",
+    title: "Nike Landing Page",
+    technologies: ["HTML", "CSS", "TAILWINDCSS", "REACT.JS", "VITE"],
+    githubLink: "test",
+    liveDemoLink: "test",
+    projectType: "fullstack",
   },
 ];
