@@ -1,4 +1,3 @@
-import Button from "@/ui/button/Button.component";
 import PageHeader from "../common/page-header/PageHeader.component";
 import ProjectsSlider from "./projects-slider/ProjectsSlider.component";
 import CTASection from "./CTA-section/CTASection.component";
