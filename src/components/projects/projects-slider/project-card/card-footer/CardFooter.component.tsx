@@ -1,7 +1,12 @@
 import Button from "@/ui/button/Button.component";
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
+import ICardFooterProps from "./CardFooter.types";
 
-export default function CardFooter({ githubLink, liveDemoLink, isPrivate }) {
+export default function CardFooter({
+  githubLink,
+  liveDemoLink,
+  isPrivate,
+}: ICardFooterProps) {
   if (!githubLink && !liveDemoLink && isPrivate) {
     return (
       <p className="b4 capitalize text-primary-600">

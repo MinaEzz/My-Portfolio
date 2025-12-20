@@ -1,4 +1,6 @@
-export default function CardBody({ title, technologies }) {
+import ICardBodyProps from "./CardBody.types";
+
+export default function CardBody({ title, technologies }: ICardBodyProps) {
   return (
     <div className="w-full h-full flex flex-col gap-4">
       <h2

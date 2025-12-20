@@ -1,7 +1,12 @@
 import Badge from "@/ui/badge/Badge.component";
 import Image from "next/image";
+import ICardHeaderProps from "./CardHeader.types";
 
-export default function CardHeader({ image, title, projectType }) {
+export default function CardHeader({
+  image,
+  title,
+  projectType,
+}: ICardHeaderProps) {
   return (
     <div className="w-full aspect-[1.6] md:w-[42%] relative overflow-hidden">
       <Image
