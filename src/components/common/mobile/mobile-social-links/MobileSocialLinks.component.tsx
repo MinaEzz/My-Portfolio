@@ -8,7 +8,7 @@ import SocialLink from "../../social-link/SocialLink.component";
 export default function MobileSocialLinks() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="lg:hidden flex fixed top-4 right-2 flex-col gap-4 z-50">
+    <div className="xl:hidden flex fixed top-4 right-2 flex-col gap-4 z-50">
       <motion.button
         className="w-12 h-12 bg-black/50 flex items-center justify-center text-white rounded-full shadow-lg"
         onClick={() => setIsOpen((prev) => !prev)}

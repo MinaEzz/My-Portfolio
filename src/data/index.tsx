@@ -208,4 +208,21 @@ export const PROJECTS = [
     projectType: "frontend",
     isPrivate: true,
   },
+  {
+    image: "https://i.postimg.cc/k5Y3XbGR/Visalab-Website-Booking-Visa.webp",
+    title: "Visalab | Visa Issuance Platform",
+    technologies: [
+      "HTML",
+      "CSS",
+      "TAILWINDCSS",
+      "NEXT.JS",
+      "TYPESCRIPT",
+      "NEXT AUTH",
+      "REDUX TOOLKIT",
+    ],
+    githubLink: "",
+    liveDemoLink: "",
+    projectType: "frontend",
+    isPrivate: true,
+  },
 ];
