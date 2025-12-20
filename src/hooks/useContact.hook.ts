@@ -29,9 +29,6 @@ export function useContact() {
 
   async function sendContact() {
     setIsLoading(true);
-    toast.success("Message sent successfully");
-    toast.error("Something went wrong");
-
     try {
       const { valid, errors: validationErrors } = validate(
         contactSchema,
