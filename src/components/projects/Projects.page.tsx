@@ -1,6 +1,4 @@
 import PageHeader from "../common/page-header/PageHeader.component";
-import ProjectsSlider from "./projects-slider/ProjectsSlider.component";
-import CTASection from "./CTA-section/CTASection.component";
 import ProjectsGrid from "./projects-grid/ProjectsGrid.component";
 
 export default function Projects() {
