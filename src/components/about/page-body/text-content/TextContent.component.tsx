@@ -1,4 +1,5 @@
 import { ABOUT_TEXT } from "@/data";
+import Button from "@/ui/button/Button.component";
 
 export default function TextContent() {
   return (
@@ -19,6 +20,14 @@ export default function TextContent() {
           );
         })}
       </div>
+      <Button
+        variant="default"
+        size="md"
+        href="/Dev. Mina Ezzat Barsom.pdf"
+        download={true}
+      >
+        Download CV
+      </Button>
     </div>
   );
 }

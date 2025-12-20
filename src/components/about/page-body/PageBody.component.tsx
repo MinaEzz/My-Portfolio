@@ -1,4 +1,4 @@
-import MINA_IMG from "@/assets/mina-ezzat-image.png";
+import MINA_IMG from "@/assets/mina-ezzat-image.webp";
 import Image from "next/image";
 import TextContent from "./text-content/TextContent.component";
 

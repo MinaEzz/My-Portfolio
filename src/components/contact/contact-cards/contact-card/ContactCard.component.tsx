@@ -9,7 +9,7 @@ export default function ContactCard({
 }: IContactCardProps) {
   return (
     <div className="group w-full rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-5 flex items-center gap-5 transition-all duration-300 hover:-translate-y-1 hover:border-primary-400/20 hover:shadow-[0_0_30px_-10px_#2231FF50]">
-      <div className="w-14 h-14 flex items-center justify-center rounded-xl text-primary-400 bg-primary-900/20">
+      <div className="w-14 h-14 flex items-center justify-center rounded-xl text-primary-400 bg-primary-900/20  transition-colors duration-300 group-hover:bg-primary-500 group-hover:text-black">
         {React.cloneElement(icon, {
           className: "w-7 h-7",
           title: title,
