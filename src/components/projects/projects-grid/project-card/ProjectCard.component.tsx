@@ -19,7 +19,7 @@ export default function ProjectCard({
       aria-labelledby={`project-title-${title.replace(/\s+/g, "-").toLowerCase()}`}
     >
       <CardHeader image={image} title={title} projectType={projectType} />
-      <div className="w-full h-full flex-1 bg-black flex flex-col justify-between p-5 gap-4">
+      <div className="w-full h-full flex-1 flex flex-col justify-between p-5 gap-4">
         <CardBody title={title} technologies={technologies} />
         <CardFooter
           githubLink={githubLink}
