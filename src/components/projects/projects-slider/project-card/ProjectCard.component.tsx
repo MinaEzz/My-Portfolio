@@ -10,20 +10,25 @@ export default function ProjectCard({
   githubLink,
   liveDemoLink,
   projectType,
+  isPrivate,
 }: IProjectCardProps) {
   return (
     <article
-      className="group w-full max-w-4xl flex items-stretch max-md:flex-col mx-auto rounded-2xl bg-white/5 backdrop-blur-sm border border-white/1 transition-all duration-300 hover:border-primary-500/40 hover:shadow-xl hover:shadow-primary-500/10 overflow-hidden"
+      className="max-w-4xl min-h-[15rem] flex max-md:flex-col mx-auto rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:border-primary-400/20 hover:shadow-[0_0_30px_-10px_#2231FF50] overflow-hidden"
       role="article"
       aria-labelledby={`project-title-${title.replace(/\s+/g, "-").toLowerCase()}`}
     >
       {/* header */}
       <CardHeader image={image} title={title} projectType={projectType} />
-      <div className="w-full h-full flex-1 p-6 space-y-8">
+      <div className="w-full flex-1 flex flex-col justify-between gap-8 p-6">
         {/* body */}
         <CardBody title={title} technologies={technologies} />
         {/*footer */}
-        <CardFooter githubLink={githubLink} liveDemoLink={liveDemoLink} />
+        <CardFooter
+          githubLink={githubLink}
+          liveDemoLink={liveDemoLink}
+          isPrivate={isPrivate}
+        />
       </div>
     </article>
   );

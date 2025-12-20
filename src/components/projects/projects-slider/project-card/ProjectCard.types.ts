@@ -7,4 +7,5 @@ export default interface IProjectCardProps {
   githubLink: string;
   liveDemoLink: string;
   projectType: string;
+  isPrivate: boolean;
 }
