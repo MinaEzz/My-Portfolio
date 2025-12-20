@@ -8,6 +8,8 @@ import Bottombar from "@/components/common/mobile/bottombar/Bottombar.component"
 import FloatingSocialLinks from "@/components/common/floating-social-links/FloatingSocialLinks.component";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -46,6 +48,14 @@ export default function RootLayout({
         <Bottombar />
         <Analytics />
         <SpeedInsights />
+        <ToastContainer
+          theme="dark"
+          toastClassName={"!bg-background !p-5"}
+          pauseOnHover
+          closeButton={false}
+          hideProgressBar={false}
+          newestOnTop
+        />
       </body>
     </html>
   );
