@@ -7,8 +7,8 @@ export default function FloatingSocialLinks() {
   const screenWidth = useScreenSize();
   return (
     <>
-      {screenWidth > 1024 && <DesktopSocialLinks />}
-      {screenWidth < 1024 && <MobileSocialLinks />}
+      {screenWidth > 1280 && <DesktopSocialLinks />}
+      {screenWidth < 1280 && <MobileSocialLinks />}
     </>
   );
 }

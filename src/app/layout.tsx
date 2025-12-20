@@ -38,7 +38,7 @@ export default function RootLayout({
       >
         <GridContainer cols={12}>
           <Sidebar />
-          <main className="w-full h-full lg:col-span-10 col-span-full">
+          <main className="w-full h-full xl:col-span-10 col-span-full">
             {children}
           </main>
           <FloatingSocialLinks />
