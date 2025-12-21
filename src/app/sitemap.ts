@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // const baseUrl = "https://dev-mina-ezzat.vercel.app/";
   return [
     {
-      url: "https://dev-mina-ezzat.vercel.app/",
+      url: "https://dev-mina-ezzat.vercel.app",
       priority: 1,
       changeFrequency: "yearly",
       lastModified: new Date(),
