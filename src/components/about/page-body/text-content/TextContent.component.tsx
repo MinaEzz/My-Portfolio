@@ -9,7 +9,7 @@ export default function TextContent() {
         aria-label="Mina Ezzat, Front-End Developer"
       >
         Mina Ezzat <br />
-        <span className="text-white">Front-End Developer</span>
+        <strong className="text-white">Front-End Developer</strong>
       </h2>
       <div className="w-full flex flex-col gap-2">
         {ABOUT_TEXT.map((text, index) => {
@@ -23,22 +23,12 @@ export default function TextContent() {
       <Button
         variant="default"
         size="md"
-        href="/Dev. Mina Ezzat Barsom.pdf"
+        href="/Dev-Mina-Ezzat-Barsom.pdf"
         download={true}
+        aria-label="Download Mina Ezzat Front-End Developer CV"
       >
         Download CV
       </Button>
     </div>
   );
 }
-
-/*
-I graduated from the Faculty of Business Information Systems (BIS) in 2024, where I gained a solid foundation in business management principles.
-
-I started studying software development in 2022, and quickly developed a passion for frontend development. Over time, I specialized in creating modern, responsive, and user-friendly web interfaces.
-
-Although my main focus is frontend development, I also have experience with backend technologies and databases. I have completed several full MERN stack projects and understand how to integrate the frontend with backend systems efficiently.
-
-I have been working in professional companies for over a year, contributing to real-world projects and collaborating with teams to deliver high-quality web applications. This experience has strengthened my problem-solving skills and understanding of industry best practices.
-
-*/
