@@ -4,10 +4,14 @@ import PageFooter from "./page-footer/PageFooter.component";
 
 export default function About() {
   return (
-    <section className="w-full min-h-screen pd-y-s lg:px-16">
+    <section
+      aria-labelledby="about-heading"
+      className="w-full min-h-screen pd-y-s lg:px-16"
+    >
       <div className="container">
         <div className="w-full flex flex-col gap-8">
           <PageHeader
+            id="about-heading"
             title="About Me"
             desc="Learn more about who I am, my journey as a Frontend Developer, and how I create modern, interactive web experiences."
           />

@@ -6,7 +6,10 @@ export default function PageBody() {
   return (
     <div className="w-full flex flex-1 items-center justify-between max-lg:flex-col gap-8">
       <div className="lg:w-[35%] md:w-[50%] max-md:w-full">
-        <Image src={MINA_IMG} alt="Portrait of Mina Ezzat Barsom" />
+        <Image
+          src={MINA_IMG}
+          alt="Portrait of Mina Ezzat, Front-End Developer"
+        />
       </div>
       <TextContent />
     </div>

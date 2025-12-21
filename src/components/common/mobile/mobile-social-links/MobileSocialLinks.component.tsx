@@ -13,6 +13,11 @@ export default function MobileSocialLinks() {
         className="w-12 h-12 bg-black/50 flex items-center justify-center text-white rounded-full shadow-lg"
         onClick={() => setIsOpen((prev) => !prev)}
         whileTap={{ scale: 0.9 }}
+        aria-label="Toggle social links"
+        aria-expanded={isOpen}
+        aria-controls="social-links"
+        title={isOpen ? "Close social links" : "Open social links"}
+        type="button"
       >
         <motion.div
           key={isOpen ? "close" : "open"}
@@ -24,7 +29,7 @@ export default function MobileSocialLinks() {
           {isOpen ? (
             <PiXBold className="w-6 h-6" />
           ) : (
-            <PiShareNetworkBold className="w-6 h-6" />
+            <PiShareNetworkBold aria-hidden className="w-6 h-6" />
           )}
         </motion.div>
       </motion.button>
