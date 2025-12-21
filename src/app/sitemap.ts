@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://dev-mina-ezzat.vercel.app";
+  const baseUrl = "https://dev-mina-ezzat.vercel.app/";
 
   return [
     {
@@ -11,19 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}about`,
       priority: 0.8,
       changeFrequency: "yearly",
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/projects`,
+      url: `${baseUrl}projects`,
       priority: 0.8,
       changeFrequency: "monthly",
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}contact`,
       priority: 0.6,
       changeFrequency: "yearly",
       lastModified: new Date(),
