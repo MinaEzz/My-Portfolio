@@ -66,6 +66,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
+    locale: "en_US",
     url: "https://dev-mina-ezzat.vercel.app/",
     siteName: "Mina Ezzat Portfolio",
     title: "Mina Ezzat – Front-End Developer React.js Specialist",
@@ -82,15 +83,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mina Ezzat – Front-End Developer",
+    title: "Mina Ezzat – Front-End Developer React.js Specialist",
     description:
       "Front-End Developer with Full Stack experience specializing in React and Next.js.",
     images: ["/mina-banner.webp"],
+    creator: "@MinaEzzat",
   },
 
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
