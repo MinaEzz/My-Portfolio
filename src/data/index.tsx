@@ -154,6 +154,7 @@ export const PROJECTS = [
       "NODE.JS",
       "EXPRESS",
       "MONGODB",
+      "JWT",
     ],
     githubLink: "https://github.com/MinaEzz/Qader-MERN-stack-project-",
     liveDemoLink: "https://qader-shop.onrender.com/",
