@@ -1,5 +1,5 @@
 export default interface ICardFooterProps {
-  githubLink?: string;
-  liveDemoLink?: string;
+  githubLink: string | null;
+  liveDemoLink: string | null;
   isPrivate: boolean;
 }
