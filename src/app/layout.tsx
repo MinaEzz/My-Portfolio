@@ -111,6 +111,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="jMqpBf5fVsLDZpygSRWl3a_VjhXb6d5OIE7fSo8IdAU"
+        />
+      </head>
       <body
         className={`${ibmPlexSans.className} ${spaceGrotesk.variable} bg-background antialiased`}
       >
