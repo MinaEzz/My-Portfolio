@@ -26,12 +26,10 @@
     "react-email": "^5.0.8",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
-    "react-slick": "^0.31.0",
     "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
     "sass": "^1.95.0",
     "server-only": "^0.0.1",
-    "slick-carousel": "^1.8.1",
     "tailwind-merge": "^3.4.0",
     "zod": "^4.1.13"
   },
