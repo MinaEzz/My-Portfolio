@@ -6,12 +6,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      changeFrequency: "yearly",
       lastModified: new Date(),
     },
     {
       url: `${baseUrl}/about`,
-      changeFrequency: "yearly",
       lastModified: new Date(),
     },
     {
@@ -21,7 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/contact`,
-      changeFrequency: "yearly",
       lastModified: new Date(),
     },
   ];
