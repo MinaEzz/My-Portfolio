@@ -25,6 +25,7 @@ import GIT_LOGO from "../assets/icons/GIT.svg";
 import GITHUB_LOGO from "../assets/icons/GITHUB.svg";
 import NPM_LOGO from "../assets/icons/NPM.svg";
 import POSTMAN_LOGO from "../assets/icons/POSTMAN.svg";
+import PRISMA_LOGO from "../assets/icons/PRISMA.svg";
 
 export const NAVIGATION_LINKS = [
   {
@@ -106,6 +107,7 @@ export const SKILLS = [
   { name: "NPM", icon: NPM_LOGO, ariaLabel: "NPM logo" },
   { name: "Git", icon: GIT_LOGO, ariaLabel: "Git logo" },
   { name: "GitHub", icon: GITHUB_LOGO, ariaLabel: "GitHub logo" },
+  { name: "Prisma", icon: PRISMA_LOGO, ariaLabel: "Prisma logo" },
 ];
 
 export const CONTACT_INFO = [
