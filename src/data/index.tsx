@@ -26,6 +26,7 @@ import GITHUB_LOGO from "../assets/icons/GITHUB.svg";
 import NPM_LOGO from "../assets/icons/NPM.svg";
 import POSTMAN_LOGO from "../assets/icons/POSTMAN.svg";
 import PRISMA_LOGO from "../assets/icons/PRISMA.svg";
+import ZOD_LOGO from "../assets/icons/ZOD.svg";
 
 export const NAVIGATION_LINKS = [
   {
@@ -96,18 +97,19 @@ export const SKILLS = [
   { name: "JavaScript", icon: JS_LOGO, ariaLabel: "JavaScript logo" },
   { name: "Bootstrap", icon: BOOTSTRAP_LOGO, ariaLabel: "Bootstrap logo" },
   { name: "jQuery", icon: JQUERY_LOGO, ariaLabel: "jQuery logo" },
+  { name: "NPM", icon: NPM_LOGO, ariaLabel: "NPM logo" },
   { name: "React", icon: REACT_LOGO, ariaLabel: "ReactJS logo" },
   { name: "Tailwind CSS", icon: TAILWIND_LOGO, ariaLabel: "Tailwind CSS logo" },
   { name: "Redux", icon: REDUX_LOGO, ariaLabel: "Redux logo" },
+  { name: "Prisma", icon: PRISMA_LOGO, ariaLabel: "Prisma logo" },
   { name: "Node JS", icon: NODE_LOGO, ariaLabel: "NodeJS logo" },
   { name: "MongoDB", icon: MONGODB_LOGO, ariaLabel: "MongoDB logo" },
   { name: "Postman", icon: POSTMAN_LOGO, ariaLabel: "Postman logo" },
   { name: "TypeScript", icon: TS_LOGO, ariaLabel: "TypeScript logo" },
   { name: "Next JS", icon: NEXT_LOGO, ariaLabel: "NextJS logo" },
-  { name: "NPM", icon: NPM_LOGO, ariaLabel: "NPM logo" },
   { name: "Git", icon: GIT_LOGO, ariaLabel: "Git logo" },
   { name: "GitHub", icon: GITHUB_LOGO, ariaLabel: "GitHub logo" },
-  { name: "Prisma", icon: PRISMA_LOGO, ariaLabel: "Prisma logo" },
+  { name: "Zod", icon: ZOD_LOGO, ariaLabel: "Zod logo" },
 ];
 
 export const CONTACT_INFO = [
@@ -122,110 +124,5 @@ export const CONTACT_INFO = [
     title: "Call Me Anytime",
     value: "+201016056294",
     href: "tel:+201016056294",
-  },
-];
-
-export const PROJECTS = [
-  {
-    image: "https://i.postimg.cc/vmkn74jq/Youtube_Clone.webp",
-    title: "Youtube Clone",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT",
-      "CRA",
-      "REACT.JS",
-      "MATERIAL UI",
-      "RAPID API",
-    ],
-    githubLink: "https://github.com/MinaEzz/YouTube-clone-react-js",
-    liveDemoLink: "https://youtube-clone-minaezzat.onrender.com/",
-    projectType: "frontend",
-    isPrivate: false,
-  },
-  {
-    image: "https://i.postimg.cc/QMw7gFP7/Qader.webp",
-    title: "Qader E-Commerce Website",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT",
-      "TAILWINDCSS",
-      "REACT.JS",
-      "VITE",
-      "NODE.JS",
-      "EXPRESS",
-      "MONGODB",
-      "JWT",
-    ],
-    githubLink: "https://github.com/MinaEzz/Qader-MERN-stack-project-",
-    liveDemoLink: "https://qader-shop.onrender.com/",
-    projectType: "fullstack",
-    isPrivate: false,
-  },
-  {
-    image: "https://i.postimg.cc/MK2hPtRL/uiux_portfolio.webp",
-    title: "UI/UX Portfolio",
-    technologies: [
-      "HTML",
-      "CSS",
-      "TAILWINDCSS",
-      "NEXT.JS",
-      "TYPESCRIPT",
-      "SUPABASE",
-      "REACT EMAIL",
-      "NODEMAILER",
-      "API ROUTES",
-    ],
-    githubLink: "https://github.com/MinaEzz/Hazem-Ahmed-UIUX-Portfolio",
-    liveDemoLink: "https://hazem-ahmed-uiux-portfolio.vercel.app/",
-    projectType: "fullstack",
-    isPrivate: false,
-  },
-  {
-    image: "https://i.postimg.cc/bJdhPJNB/nike-shoes.webp",
-    title: "Nike Shoes Landing Page",
-    technologies: ["HTML", "CSS", "TAILWINDCSS", "REACT.JS", "VITE"],
-    githubLink:
-      "https://github.com/MinaEzz/Nike-Landing-Page---React-Vite-Tailwindcss",
-    liveDemoLink: "https://nike-landing-page-minaezzat.onrender.com/",
-    projectType: "frontend",
-    isPrivate: false,
-  },
-  {
-    image:
-      "https://i.postimg.cc/SsWWyWQ3/Travel-Solution-B2B-Booking-System.webp",
-    title: "Travel Solution B2B Booking System",
-    technologies: [
-      "HTML",
-      "CSS",
-      "TAILWINDCSS",
-      "NEXT.JS",
-      "TYPESCRIPT",
-      "NEXT AUTH",
-      "REDUX TOOLKIT",
-      "DESIGN SYSTEM",
-    ],
-    githubLink: "",
-    liveDemoLink: "",
-    projectType: "frontend",
-    isPrivate: true,
-  },
-  {
-    image: "https://i.postimg.cc/k5Y3XbGR/Visalab-Website-Booking-Visa.webp",
-    title: "Visalab | Visa Issuance Platform",
-    technologies: [
-      "HTML",
-      "CSS",
-      "TAILWINDCSS",
-      "NEXT.JS",
-      "TYPESCRIPT",
-      "NEXT AUTH",
-      "REDUX TOOLKIT",
-    ],
-    githubLink: "",
-    liveDemoLink: "",
-    projectType: "frontend",
-    isPrivate: true,
   },
 ];
