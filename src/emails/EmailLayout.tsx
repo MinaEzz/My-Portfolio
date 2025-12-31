@@ -40,7 +40,7 @@ export default function EmailLayout({
           <Section
             style={{
               backgroundImage:
-                "url('https://i.postimg.cc/hGShKbtd/mina-banner-(1).webp')",
+                "url('https://i.postimg.cc/MKPHyCvt/email_header_image.webp')",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "50% 47%",

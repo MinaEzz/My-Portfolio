@@ -1,10 +1,10 @@
 "use client";
-
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { validate } from "@/utils/validate";
 import { contactSchema } from "@/components/contact/contact-form/Contact.schema";
-import { IContactFormValues } from "@/components/contact/contact-form/Contact.types";
+import type { IContactFormValues } from "@/components/contact/contact-form/Contact.types";
+import { useMutation } from "@tanstack/react-query";
 
 export function useContact() {
   const [formValues, setFormValues] = useState<IContactFormValues>({
@@ -14,10 +14,13 @@ export function useContact() {
     subject: "",
     message: "",
   });
-  const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState<{ field: string; message: string }[]>(
     []
   );
+
+  const mutation = useMutation({
+    mutationFn: sendContact,
+  });
 
   function handleChange(
     e:
@@ -28,7 +31,6 @@ export function useContact() {
   }
 
   async function sendContact() {
-    setIsLoading(true);
     try {
       const { valid, errors: validationErrors } = validate(
         contactSchema,
@@ -36,7 +38,6 @@ export function useContact() {
       );
       if (!valid) {
         setErrors(validationErrors);
-        setIsLoading(false);
         return;
       }
 
@@ -54,8 +55,11 @@ export function useContact() {
         },
       });
       const data = await response.json();
-      if (data.status !== "SUCCESS")
+      if (data.status !== "SUCCESS") {
+        toast.error(data.message || "Error occured");
+        console.error(data.message || "Error occured");
         throw new Error(data.message || "Error occured");
+      }
       toast.success(data.message || "Message sent successfully");
 
       setFormValues({
@@ -68,24 +72,25 @@ export function useContact() {
       setErrors([]);
     } catch (error: unknown) {
       if (error instanceof Error) {
-        return toast.error(error.message);
+        console.error(error.message || "Something went wrong");
+        toast.error(error.message || "Something went wrong");
+        throw new Error(error.message || "Something went wrong");
       }
-      return toast.error("Something went wrong");
-    } finally {
-      setIsLoading(false);
+      console.error("Unexpected error:", error);
+      toast.error("Something went wrong");
     }
   }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    sendContact();
+    mutation.mutate();
   }
 
   return {
     formValues,
     handleChange,
     handleSubmit,
-    isLoading,
+    isLoading: mutation.isPending,
     errors,
   };
 }

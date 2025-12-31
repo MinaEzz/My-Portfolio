@@ -4,7 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   //domain for next image
   images: {
-    domains: ["i.postimg.cc"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.postimg.cc",
+      },
+    ],
   },
 };
 
