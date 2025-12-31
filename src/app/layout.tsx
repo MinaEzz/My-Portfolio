@@ -10,6 +10,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import RootProvider from "@/providers/RootProvider";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -120,14 +121,16 @@ export default function RootLayout({
       <body
         className={`${ibmPlexSans.className} ${spaceGrotesk.variable} bg-background antialiased`}
       >
-        <GridContainer cols={12}>
-          <Sidebar />
-          <main className="w-full h-full xl:col-span-10 col-span-full">
-            {children}
-          </main>
-          <FloatingSocialLinks />
-        </GridContainer>
-        <Bottombar />
+        <RootProvider>
+          <GridContainer cols={12}>
+            <Sidebar />
+            <main className="w-full h-full xl:col-span-10 col-span-full">
+              {children}
+            </main>
+            <FloatingSocialLinks />
+          </GridContainer>
+          <Bottombar />
+        </RootProvider>
         <Analytics />
         <SpeedInsights />
         <ToastContainer

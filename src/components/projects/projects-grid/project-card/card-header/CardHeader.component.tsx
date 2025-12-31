@@ -15,6 +15,7 @@ export default function CardHeader({
         loading="lazy"
         fill
         className="object-cover object-center"
+        sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
       />
       <div className="black-layer-to-right" />
       <Badge

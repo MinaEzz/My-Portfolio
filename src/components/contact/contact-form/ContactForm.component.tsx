@@ -97,7 +97,14 @@ export default function ContactForm() {
         className="w-[12rem]"
         disabled={isLoading}
       >
-        {isLoading ? <ClipLoader size={24} /> : "Submit"}
+        {isLoading ? (
+          <>
+            <ClipLoader size={24} />
+            Sending...
+          </>
+        ) : (
+          "Submit"
+        )}
       </Button>
     </form>
   );
