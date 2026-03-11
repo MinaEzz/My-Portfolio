@@ -1,4 +1,5 @@
 import PageHeader from "../common/page-header/PageHeader.component";
+import ProjectsFilter from "./projects-filter/ProjectsFilter.component";
 import ProjectsGrid from "./projects-grid/ProjectsGrid.component";
 
 export default function Projects() {
@@ -14,6 +15,7 @@ export default function Projects() {
             title="Projects"
             desc="A selection of projects I've built using modern web technologies, focusing on performance, usability, and clean user interfaces."
           />
+          <ProjectsFilter />
           <ProjectsGrid />
         </div>
       </div>

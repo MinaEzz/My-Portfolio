@@ -1,5 +1,6 @@
 "use client";
 import ReactQueryProvider from "./react-query-provider/ReactQueryProvider";
+import StoreProvider from "./StoreProvider";
 
 export default function RootProvider({
   children,
@@ -8,7 +9,9 @@ export default function RootProvider({
 }) {
   return (
     <>
-      <ReactQueryProvider>{children}</ReactQueryProvider>
+      <ReactQueryProvider>
+        <StoreProvider>{children}</StoreProvider>
+      </ReactQueryProvider>
     </>
   );
 }
