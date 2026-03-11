@@ -2,9 +2,17 @@
 import { useGetProjects } from "@/hooks/useGetProjects.hook";
 import ProjectCard from "./project-card/ProjectCard.component";
 import { RingLoader } from "react-spinners";
+import { useAppSelector } from "@/lib/store/hooks";
 
 export default function ProjectsGrid() {
   const { projects, isLoading } = useGetProjects();
+  const selected = useAppSelector((state) => state.projectsFilter.selected);
+
+  const filteredProjects = projects.filter((project) => {
+    if (selected === "all") return true;
+    return project.projectType === selected;
+  });
+
   if (isLoading)
     return (
       <div className="w-full flex flex-col items-center text-center gap-2">
@@ -18,7 +26,7 @@ export default function ProjectsGrid() {
       className="w-full grid 2xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-4 gap-y-8"
       role="list"
     >
-      {projects.map((project, index) => {
+      {filteredProjects.map((project, index) => {
         return (
           <li key={index} role="listitem" className="w-full h-full">
             <ProjectCard {...project} />;

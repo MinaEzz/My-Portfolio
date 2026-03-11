@@ -126,3 +126,26 @@ export const CONTACT_INFO = [
     href: "tel:+201016056294",
   },
 ];
+
+export const FILTER_OPTIONS = [
+  {
+    label: "All",
+    value: "all",
+  },
+  {
+    label: "Front-End",
+    value: "frontend",
+  },
+  // {
+  //   label: "Back-End",
+  //   value: "backend",
+  // },
+  {
+    label: "Full-Stack",
+    value: "fullstack",
+  },
+  // {
+  //   label: "Wordpress",
+  //   value: "wordpress",
+  // },
+];
