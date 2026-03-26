@@ -28,7 +28,7 @@ export default function ProjectsGrid() {
     >
       {filteredProjects.map((project, index) => {
         return (
-          <li key={index} role="listitem" className="w-full h-full">
+          <li key={index} className="w-full h-full">
             <ProjectCard {...project} />;
           </li>
         );
