@@ -25,7 +25,7 @@ export default function CardFooter({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`View ${githubLink} on GitHub`}
-          className="w-[10rem]"
+          className="w-40"
         >
           <FaGithub className="w-4 h-4" aria-hidden="true" />
           Github Repo
@@ -39,7 +39,7 @@ export default function CardFooter({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`View live demo of the project`}
-          className="w-[10rem]"
+          className="w-40"
         >
           <FaExternalLinkSquareAlt className="w-4 h-4" aria-hidden="true" />
           Live Demo
