@@ -16,7 +16,7 @@ export default function TextContent() {
         <Button
           variant="default"
           size="lg"
-          href="/Dev-Mina-Ezzat-Barsom.pdf"
+          href="/Mina Ezzat Barsom_Resume.pdf"
           download={true}
           className="w-[12.75rem]"
           aria-label="Download Mina Ezzat Front-End Developer CV"
